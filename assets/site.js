@@ -1,9 +1,6 @@
 (function(){
-  var header=document.querySelector('.site-header');
   var btn=document.querySelector('.menu-btn');
   var nav=document.getElementById('mobile-nav');
-  function onScroll(){ if(header) header.classList.toggle('scrolled', window.scrollY>8); }
-  window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
   function setMenu(open){
     if(!btn||!nav) return;
     nav.classList.toggle('open', open);
