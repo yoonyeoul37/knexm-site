@@ -123,7 +123,8 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--blue);outline-offse
 .rows li b{font-size:18px;font-weight:500}
 .info{margin:0;border-top:1px solid var(--ink)}
 .info div{display:flex;flex-wrap:wrap;gap:4px 24px;padding:20px 0;border-bottom:1px solid var(--line)}
-.info dt{flex:0 0 140px;font-size:14px;color:var(--mute)}
+.info dt{flex:0 0 160px;display:flex;align-items:flex-start;gap:10px;font-size:14px;line-height:1.7;color:var(--mute)}
+.info dt svg{flex:0 0 auto;margin-top:3px;color:#8a877f}
 .info dd{flex:1 1 260px;margin:0;font-size:15px;line-height:1.7}
 
 /* location */
