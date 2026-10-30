@@ -98,8 +98,14 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--blue);outline-offse
 .contact .mail{display:inline-block;font-size:clamp(36px,6vw,96px);line-height:1;font-weight:600;letter-spacing:-.04em;border-bottom:2px solid var(--ink);padding-bottom:8px}
 .contact .mail:hover{border-color:var(--blue)}
 .contact .sub{margin-top:24px;font-size:15px;color:var(--mute)}
-.foot{margin-top:120px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;font-size:12px;line-height:1.9;color:var(--mute)}
-.foot a:first-child{font-weight:600;color:var(--ink)}
+.foot{margin-top:120px;padding-top:32px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:28px 40px;color:var(--mute)}
+.fcols{display:flex;flex-wrap:wrap;gap:18px 44px}
+.fcol{display:flex;flex-direction:column;gap:6px}
+.fl{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:600;letter-spacing:.03em;color:#8a877f}
+.fl svg{flex:0 0 auto}
+.fv{font-size:13px;line-height:1.6;color:var(--ink)}
+.flinks{font-size:12px;white-space:nowrap}
+.flinks a:first-child{font-weight:600;color:var(--ink)}
 
 /* company */
 .lead-xl{font-size:clamp(36px,5vw,72px);line-height:1.15;font-weight:600;letter-spacing:-.04em}
@@ -186,6 +192,9 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--blue);outline-offse
   .steps,.values{grid-template-columns:1fr;gap:36px}
   .contact{padding:80px var(--px) 56px}
   .foot{margin-top:72px}
+  .fcols{display:grid;grid-template-columns:1fr 1fr;gap:18px 20px;width:100%}
+  .fcol.wide{grid-column:1/-1}
+  .flinks{white-space:normal}
   .body-lg{font-size:16px}
   .hero h1.lead-xl{font-size:34px}
   .rows li{gap:16px}
