@@ -33,7 +33,10 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--blue);outline-offse
 .side .logo img{height:26px;width:auto}
 .side .tagline{margin-top:18px;font-size:13px;color:var(--mute)}
 .side-nav{margin-top:72px;display:flex;flex-direction:column;gap:14px;font-size:15px;font-weight:500}
-.side-nav a[aria-current="page"]{color:var(--blue)}
+.side-nav a{display:flex;align-items:center;gap:12px}
+.side-nav .ic,.mobile-nav .ic{flex:0 0 auto;color:#8a877f;transition:color .2s}
+.side-nav a:hover .ic,.side-nav a[aria-current="page"] .ic,.mobile-nav a[aria-current="page"] .ic{color:var(--blue)}
+.side-nav a[aria-current="page"],.mobile-nav a[aria-current="page"]{color:var(--blue)}
 .side-bottom{display:flex;flex-direction:column;gap:28px}
 .langs{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:13px;font-weight:500;color:var(--mute)}
 .langs a{padding:2px 0;border-bottom:1px solid transparent}
@@ -159,7 +162,8 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--blue);outline-offse
   .topbar .logo img{height:22px;width:auto}
   .mobile-nav{display:block;position:fixed;z-index:49;inset:64px 0 0 0;background:var(--bg);padding:24px 20px 40px;opacity:0;visibility:hidden;transform:translateY(-8px);transition:opacity .25s,transform .25s,visibility .25s;overflow-y:auto}
   .mobile-nav.open{opacity:1;visibility:visible;transform:none}
-  .mobile-nav a{display:flex;align-items:center;min-height:64px;border-bottom:1px solid var(--line);font-size:24px;font-weight:600;letter-spacing:-.02em}
+  .mobile-nav a{display:flex;align-items:center;gap:16px;min-height:64px;border-bottom:1px solid var(--line);font-size:24px;font-weight:600;letter-spacing:-.02em}
+  .mobile-nav .ic{width:22px;height:22px}
   .mobile-nav .langs{margin-top:28px;gap:10px;font-size:15px}
   .mobile-nav .langs a{display:inline-flex;min-height:40px;align-items:center;padding:0 14px;border:1px solid var(--line);border-radius:999px;font-size:14px;font-weight:600;letter-spacing:0}
   .mobile-nav .langs a[aria-current="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
