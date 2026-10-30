@@ -43,7 +43,8 @@ h1,h2,h3,p{margin:0}
 .site-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:saturate(180%) blur(12px);-webkit-backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid transparent;transition:border-color .2s}
 .site-header.scrolled{border-bottom-color:var(--line)}
 .site-header .wrap{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-.logo{font-weight:600;font-size:21px;letter-spacing:.2em}
+.logo{display:flex;align-items:center}
+.logo img{display:block;height:28px;width:auto}
 .nav{display:flex;align-items:center;gap:36px;font-size:15px}
 .nav a[aria-current="page"]{font-weight:700}
 .header-cta{display:flex;align-items:center;gap:8px}
@@ -147,6 +148,8 @@ h1,h2,h3,p{margin:0}
 .fb4{font-size:20px}
 .f-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px;padding:28px 0;border-top:1px solid #2a2a2a;font-size:13px;color:#8c8c8c}
 .f-links{display:flex;flex-wrap:wrap;align-items:center;gap:28px}
+.f-copy{display:inline-flex;align-items:center;gap:16px}
+.f-copy img{display:block;height:18px;width:auto}
 .f-links a:first-child{font-weight:600}
 .site-footer .f-links a:nth-child(2){color:#8c8c8c}
 .to-top{width:44px;height:44px;border:1px solid #3a3a3a;border-radius:50%;display:flex;align-items:center;justify-content:center}
@@ -225,6 +228,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
   .nav,.header-cta .btn-line{display:none}
   .menu-btn{display:flex}
   .site-header .wrap{min-height:64px}
+  .logo img{height:24px}
   .mobile-nav{display:block;position:fixed;z-index:49;inset:64px 0 0 0;background:#fff;padding:24px var(--pad) 40px;transform:translateY(-8px);opacity:0;visibility:hidden;transition:opacity .25s,transform .25s,visibility .25s;overflow-y:auto}
   .mobile-nav.open{opacity:1;visibility:visible;transform:none}
   .mobile-nav a{display:flex;align-items:center;min-height:64px;border-bottom:1px solid var(--line);font-size:22px;font-weight:600;letter-spacing:-.01em}
