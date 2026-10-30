@@ -112,10 +112,10 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--blue);outline-offse
 .hero-text{flex:1 1 520px;min-width:0}
 .hero-mark{flex:0 0 auto;width:clamp(160px,19vw,300px);height:auto}
 .hero.has-mark h1{font-size:clamp(56px,6.4vw,112px)}
-.ticker{background:var(--blue);color:#fff;overflow:hidden;padding:26px 0}
-.ticker .track{display:flex;width:max-content;animation:knx-marquee 32s linear infinite}
+.ticker{background:#111111;color:#fff;overflow:hidden;padding:26px 0}
+.ticker .track{display:flex;width:max-content;animation:knx-marquee 64s linear infinite}
 .ticker span{display:inline-flex;align-items:center;gap:48px;padding-right:48px;font-size:30px;font-weight:600;letter-spacing:-.02em;white-space:nowrap}
-.ticker i{display:block;width:10px;height:10px;border-radius:50%;background:#fff}
+.ticker i{display:block;width:10px;height:10px;border-radius:50%;background:var(--blue)}
 @keyframes knx-marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 .contact{background:#111111;color:#fff}
 .contact .label{color:#8c8c8c}
